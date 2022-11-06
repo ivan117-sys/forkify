@@ -60,7 +60,9 @@ const controlSearchResults = async function () {
   }
 };
 
-console.log('Welcome!');
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
 
 const controlPagination = function (goToPage) {
   // 1) Render new results
@@ -135,6 +137,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 
 init();
